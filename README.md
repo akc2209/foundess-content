@@ -10,7 +10,6 @@ export ANTHROPIC_API_KEY=
 npm run dev
 ```
 
-
 ## How it works
 
 - `branding/brand.json` is the single source of truth for color palette, typography, voice, X generation rules, and Instagram caption rules.
