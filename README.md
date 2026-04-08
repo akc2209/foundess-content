@@ -6,11 +6,10 @@ Internal content multiplier. Turns a prompt into 3 on-brand X posts or 3 Instagr
 
 ```bash
 npm install
-export ANTHROPIC_API_KEY=sk-ant-...
+export ANTHROPIC_API_KEY= 
 npm run dev
 ```
 
-Open http://localhost:3000.
 
 ## How it works
 
