@@ -1,0 +1,179 @@
+{
+  "$schema": "foundess-content-multiplier/branding/color-palette.schema",
+  "name": "Foundess Content Multiplier — Core Palette",
+  "version": "1.0.0",
+  "canvas": {
+    "aspectRatio": "4:5",
+    "ratioDecimal": 0.8,
+    "referenceDimensions": {
+      "width": 1080,
+      "height": 1350,
+      "unit": "px"
+    },
+    "notes": "All generated HTML/CSS designs must render at a 4:5 aspect ratio. Use the reference dimensions (1080x1350) as the default export size; scale proportionally for other resolutions."
+  },
+  "colors": {
+    "cream": {
+      "hex": "#FFF9E9",
+      "rgb": [255, 249, 233],
+      "role": "background",
+      "description": "Primary background. Warm off-white cream. Use as the default page/canvas fill.",
+      "usage": [
+        "Default canvas background",
+        "Large empty surfaces",
+        "Text color when placed on black or lavender blocks"
+      ],
+      "doNotUse": [
+        "Do not use for body text on light backgrounds (insufficient contrast)"
+      ]
+    },
+    "lavender": {
+      "hex": "#B9B2FD",
+      "rgb": [185, 178, 253],
+      "role": "primary",
+      "description": "Primary brand accent. Soft lavender. Use for hero shapes, highlight blocks, and brand elements.",
+      "usage": [
+        "Hero blocks and accent shapes",
+        "Section backgrounds that need visual emphasis",
+        "Decorative elements, badges, tags",
+        "Button fills (with black text)"
+      ],
+      "doNotUse": [
+        "Do not use for small body text on cream (low contrast)",
+        "Avoid pairing directly with lime as dominant duo without a neutral separator"
+      ]
+    },
+    "black": {
+      "hex": "#000000",
+      "rgb": [0, 0, 0],
+      "role": "text",
+      "description": "Primary text and high-contrast anchor. Use for headlines, body copy, outlines, and icons.",
+      "usage": [
+        "Headlines and body text on cream or lavender",
+        "Strokes, dividers, outlines",
+        "Icons and logos",
+        "Contrast blocks / typographic emphasis"
+      ],
+      "doNotUse": [
+        "Avoid large full-black backgrounds unless paired with cream or lime text"
+      ]
+    },
+    "lime": {
+      "hex": "#EFFF82",
+      "rgb": [239, 255, 130],
+      "role": "accent",
+      "description": "Secondary accent. Electric lime. Use sparingly for highlights, CTAs, and attention-grabbing marks.",
+      "usage": [
+        "Call-to-action highlights",
+        "Highlighter-style text emphasis",
+        "Small shapes, stickers, arrows, underlines",
+        "Accent fills on black backgrounds"
+      ],
+      "doNotUse": [
+        "Do not use as a dominant background for long-form text",
+        "Do not place lime text on cream (insufficient contrast)"
+      ]
+    }
+  },
+  "palette": {
+    "background": "#FFF9E9",
+    "primary": "#B9B2FD",
+    "text": "#000000",
+    "accent": "#EFFF82"
+  },
+  "usageRatio": {
+    "background": 0.6,
+    "primary": 0.25,
+    "text": 0.1,
+    "accent": 0.05,
+    "notes": "Approximate visual weight per design. Background dominates; accent (lime) should feel rare and intentional."
+  },
+  "pairings": {
+    "allowed": [
+      { "background": "#FFF9E9", "foreground": "#000000", "use": "Primary text on default canvas" },
+      { "background": "#FFF9E9", "foreground": "#B9B2FD", "use": "Lavender shapes/blocks on cream" },
+      { "background": "#B9B2FD", "foreground": "#000000", "use": "Text on lavender blocks" },
+      { "background": "#000000", "foreground": "#FFF9E9", "use": "Cream text on black blocks" },
+      { "background": "#000000", "foreground": "#EFFF82", "use": "Lime accent text on black" },
+      { "background": "#B9B2FD", "foreground": "#EFFF82", "use": "Lime accents on lavender (decorative only, not body text)" }
+    ],
+    "disallowed": [
+      { "background": "#EFFF82", "foreground": "#FFF9E9", "reason": "Insufficient contrast" },
+      { "background": "#FFF9E9", "foreground": "#EFFF82", "reason": "Insufficient contrast" },
+      { "background": "#B9B2FD", "foreground": "#FFF9E9", "reason": "Low contrast for text" }
+    ]
+  },
+  "cssVariables": {
+    "--color-bg": "#FFF9E9",
+    "--color-primary": "#B9B2FD",
+    "--color-text": "#000000",
+    "--color-accent": "#EFFF82",
+    "--font-h1": "'Junicode', serif",
+    "--font-h2": "'Times New Roman MT Condensed', 'Times New Roman', serif",
+    "--font-h3": "'Junicode', serif",
+    "--font-body": "'Chivo', sans-serif"
+  },
+  "typography": {
+    "h1": {
+      "fontFamily": "Junicode",
+      "fallback": "serif",
+      "style": "normal",
+      "weight": 400,
+      "description": "Primary display headline. Classical, literary serif. Use for the biggest statement on the canvas.",
+      "usage": [
+        "Main headline / hero title",
+        "One per design, large scale"
+      ],
+      "cssStack": "'Junicode', serif"
+    },
+    "h2": {
+      "fontFamily": "Times New Roman MT Condensed",
+      "fallback": "'Times New Roman', serif",
+      "style": "normal",
+      "weight": 400,
+      "description": "Secondary headline in condensed Times. Set in normal style, but italicize key words for emphasis and editorial rhythm.",
+      "emphasis": {
+        "technique": "italicize-key-words",
+        "rule": "Within any H2, italicize 1–3 key words that carry the core meaning. The rest remains upright. Do not italicize the entire line.",
+        "example": "The <em>only</em> content tool you need."
+      },
+      "usage": [
+        "Sub-headline beneath H1",
+        "Section titles",
+        "Editorial pull statements"
+      ],
+      "cssStack": "'Times New Roman MT Condensed', 'Times New Roman', serif"
+    },
+    "h3": {
+      "fontFamily": "Junicode",
+      "fallback": "serif",
+      "style": "normal",
+      "weight": 400,
+      "description": "Tertiary heading. Matches H1 family to reinforce the serif voice at smaller scale.",
+      "usage": [
+        "Card titles",
+        "Callout headers",
+        "Small section labels"
+      ],
+      "cssStack": "'Junicode', serif"
+    },
+    "body": {
+      "fontFamily": "Chivo",
+      "fallback": "sans-serif",
+      "style": "normal",
+      "weight": 400,
+      "description": "Body copy. Geometric sans-serif for clarity and contrast against the serif headings.",
+      "usage": [
+        "Paragraphs",
+        "Captions",
+        "UI labels, buttons, metadata"
+      ],
+      "cssStack": "'Chivo', sans-serif"
+    },
+    "pairingNotes": [
+      "Serif (Junicode / Times NR Condensed) for headings, sans (Chivo) for body — never mix the roles.",
+      "H2 italic-emphasis is a signature move: always italicize the semantically loaded word(s), not decorative ones.",
+      "Keep body text in black (#000000) on cream (#FFF9E9) or cream on black for maximum legibility."
+    ]
+  }
+}

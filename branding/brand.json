@@ -1,0 +1,247 @@
+{
+  "brand": "Foundess Content Multiplier",
+  "aspectRatio": "4:5",
+  "canvas": {
+    "ratio": "4:5",
+    "widthUnits": 4,
+    "heightUnits": 5,
+    "recommendedPx": { "width": 1080, "height": 1350 }
+  },
+  "colors": {
+    "palette": {
+      "cream": "#FFF9E9",
+      "lavender": "#B9B2FD",
+      "black": "#000000",
+      "lime": "#EFFF82"
+    },
+    "roles": {
+      "background": "#FFF9E9",
+      "primary": "#B9B2FD",
+      "text": "#000000",
+      "accent": "#EFFF82"
+    }
+  },
+  "typography": {
+    "sizing": {
+      "headers": "150pt",
+      "body": "20pt"
+    },
+    "primaryHeaderFont": "Junicode",
+    "h1": {
+      "fontFamily": "Junicode, \"Junicode Two\", serif",
+      "fontSize": "150pt",
+      "usage": "Primary headline / hero statement",
+      "style": "normal",
+      "emphasis": "Italicize key words within the heading for emphasis"
+    },
+    "h2": {
+      "fontFamily": "Junicode, \"Junicode Two\", \"Times New Roman MT Condensed\", \"Times New Roman\", serif",
+      "fontSize": "150pt",
+      "usage": "Secondary headline",
+      "style": "normal",
+      "emphasis": "Italicize key words within the heading for emphasis"
+    },
+    "h3": {
+      "fontFamily": "Junicode, \"Junicode Two\", serif",
+      "fontSize": "150pt",
+      "usage": "Tertiary headline / section label",
+      "style": "normal",
+      "emphasis": "Italicize key words within the heading for emphasis"
+    },
+    "body": {
+      "fontFamily": "Chivo, sans-serif",
+      "fontSize": "20pt",
+      "usage": "Body copy, captions, UI text",
+      "style": "normal"
+    }
+  },
+  "language": {
+    "sources": [
+      "@a16z",
+      "@lennysan",
+      "@karpathy",
+      "@lilianweng",
+      "@sh_reya",
+      "@chipro",
+      "@soumithchintala",
+      "@percyliang",
+      "@GergelyOrosz",
+      "@rauchg",
+      "@t3dotgg",
+      "@addyosmani",
+      "@swyx"
+    ],
+    "voice": {
+      "tone": "Smart, dry, slightly irreverent. Builder-to-builder. Confident but self-aware.",
+      "register": "Technical but human. Lowercase-friendly. Short sentences. Occasional em-dashes. No corporate hedging.",
+      "humor": "Deadpan observations, gentle self-own, 'shipping > talking' energy, contrarian takes delivered casually.",
+      "avoid": [
+        "Hashtag spam",
+        "Emoji walls",
+        "LinkedIn-style motivational posts",
+        "Generic 'thread 🧵' openers",
+        "Corporate buzzwords (synergy, leverage, unlock value)",
+        "Over-explaining the obvious"
+      ]
+    },
+    "patterns": {
+      "openers": [
+        "hot take:",
+        "underrated:",
+        "the thing nobody tells you about X is —",
+        "spent the weekend on X. notes:",
+        "reminder that",
+        "quietly, X is becoming the default",
+        "counterintuitive but"
+      ],
+      "structures": [
+        "One-line punchline, then 1–3 short lines of evidence.",
+        "Numbered mini-thread: '1/ …  2/ …  3/ …'",
+        "Observation → implication → question to the reader.",
+        "Before/after framing: 'two years ago X. today Y. next year Z.'",
+        "List of 3–5 bullets, each under 12 words."
+      ],
+      "closers": [
+        "curious what others are seeing.",
+        "ymmv.",
+        "open to being wrong here.",
+        "this is the whole post.",
+        "more soon."
+      ]
+    },
+    "topicDomains": [
+      "AI model releases and evals",
+      "developer tooling and DX",
+      "startup building and PMF",
+      "frontend/web performance",
+      "LLM training, inference, and systems",
+      "research papers and benchmarks",
+      "career and hiring in tech",
+      "product craft and taste"
+    ],
+    "styleByAuthor": {
+      "@a16z": "Macro-thesis framing, portfolio-flavored optimism, 'why now' narratives.",
+      "@lennysan": "Product/growth frameworks, crisp listicles, founder interview pull-quotes.",
+      "@karpathy": "First-principles ML intuition, teacherly asides, elegant code-as-explanation.",
+      "@lilianweng": "Rigorous, survey-style summaries of new research, calm and precise.",
+      "@sh_reya": "Data systems + LLM eval rigor, practical 'here's what actually broke' energy.",
+      "@chipro": "ML systems in production, thoughtful long-form distilled into a tweet.",
+      "@soumithchintala": "PyTorch/infra insider takes, dry humor, GPU reality checks.",
+      "@percyliang": "Academic framing of evals, transparency, and benchmarks.",
+      "@GergelyOrosz": "Inside-baseball engineering org/industry reporting, receipts-driven.",
+      "@rauchg": "Terse, aesthetic, web-platform and DX micro-observations. Lowercase.",
+      "@t3dotgg": "Opinionated TS/React/dev tooling hot takes, high-energy.",
+      "@addyosmani": "Performance, Core Web Vitals, practical frontend tips with numbers.",
+      "@swyx": "AI engineering meta-commentary, coins terms, connects dots across communities."
+    },
+    "xPostGenerationRules": {
+      "appliesWhen": "User explicitly asks for X / Twitter post generation.",
+      "mustDo": [
+        "Before drafting, look up what is actually happening RIGHT NOW in AI / dev tools / startups — do not rely on stale training data.",
+        "Cover the same topic domains these accounts cover (AI models, dev tools, systems, startups, frontend, research).",
+        "Match the voice, patterns, and humor defined above.",
+        "Keep posts short. Prefer one sharp idea over a bloated thread.",
+        "When doing a thread, number it and keep each post under ~240 chars.",
+        "Cite the new thing concretely (model name, version, benchmark, incident) instead of vague 'a new model dropped'."
+      ],
+      "mustNotDo": [
+        "Do not invent fake benchmarks, fake quotes, or fake version numbers.",
+        "Do not use hashtags or emoji spam.",
+        "Do not write motivational LinkedIn-style posts.",
+        "Do not impersonate the listed accounts by name — draw on their style, not their identity."
+      ],
+      "freshnessRequirement": "Claude must figure out what is currently happening (recent releases, incidents, launches, papers) at the time of generation, not what was current at training time."
+    },
+    "instagramCaptions": {
+      "appliesWhen": "User explicitly asks for Instagram caption generation.",
+      "purpose": "Foundess IG captions usually promote events, partnerships, panels, or community meetups — often in NYC — aimed at founders, builders, and creatives.",
+      "voice": {
+        "tone": "Warm, inviting, community-first, slightly playful. Feels like a friend inviting you to something cool, not a brand broadcasting.",
+        "register": "Casual, sentence case, generous with line breaks. Emojis are welcome but purposeful — usually 1–3 per line max, themed to the event (🥐✨ for a cafe, 🃏🎉 for game night, 🚀 for builder panels).",
+        "humor": "Light, friendly, never snarky. The X-post dry humor does NOT apply here."
+      },
+      "structure": {
+        "typicalFlow": [
+          "Hook — a question, teaser, or vibe-setting line that makes the reader stop scrolling.",
+          "Context — what the event is, who it's with, why it exists.",
+          "Partner / collaborator shoutouts using @handles, each with a short descriptor.",
+          "Details — date, time, location (or 'TBD (NYC)'), format, what to expect.",
+          "If it's a panel: 'Meet the builders 🚀' style bios — name, company, one-line accomplishment.",
+          "Call to action — 'RSVP link in bio', 'comment SHOP and we'll DM you', 'sign up at link in bio', direct lu.ma link."
+        ],
+        "formatting": [
+          "Use line breaks generously. Short paragraphs, lots of whitespace.",
+          "Bullet-style lines often start with an emoji (✨, 🎲, 📍, 🗓, 🕘).",
+          "Event metadata (date/time/location) should be on its own lines with emoji markers.",
+          "Handles (@partner) should appear with a short descriptor of what they do / why they're involved.",
+          "Curly brace asides like '{ comment SHOP and we'll send you the link 🛍️ }' are an acceptable Foundess quirk."
+        ]
+      },
+      "ctaPatterns": [
+        "RSVP link in our bio",
+        "Link in bio to sign up.",
+        "Sign up at Link in Bio !",
+        "comment [KEYWORD] and we'll send you the link",
+        "RSVP now at https://lu.ma/..."
+      ],
+      "mustDo": [
+        "Lead with a hook that conveys the vibe of the event before any logistics.",
+        "Credit every partner with @handle + a one-line descriptor of what they bring.",
+        "Include clear event details: date, time, location (city at minimum), and how to RSVP.",
+        "Match emoji theme to the event topic (food, games, builders, rooftop, etc.).",
+        "Keep it community-first — the reader should feel invited, not marketed to.",
+        "For panels/builder events, give each speaker a short bio: name (company) — one-line accomplishment."
+      ],
+      "mustNotDo": [
+        "Do not use the dry/deadpan X voice — IG is warmer.",
+        "Do not hashtag-spam. Hashtags are optional and should be minimal if used at all.",
+        "Do not bury the CTA. It should be easy to spot near the end.",
+        "Do not invent partners, speakers, dates, or stats — only use details the user provides.",
+        "Do not write a wall of text with no line breaks."
+      ],
+      "exampleCaptions": [
+        "Are you a founder or creative living in NYC looking to meet new people & try yummy homemade pastries? 😋🥐✨\n\nFoundess is partnering with our friends @framer @founderscommon and @carotlynscafe to serve you the best founders' cafe experience you'll ever get in NYC.\n\n@carotlynscafe homemade Asian-fusion style pastries🤌\n@framer our favorite no-code website design platform ever💗\n@founderscommon event hosted at their HQ - the most beautiful office, perfect for co-working😍\n\nRSVP link in our bio",
+        "Building with AI isn't what most people think it is. Join us for an honest conversation about AI in startups today. Link in bio to sign up.\n\nMeet the builders 🚀 :\n\nNico F. (Default) - Turned revenue ops into an AI-powered machine. Just raised $6.6M and launched Default 2.0.\n\nKian Sadeghi (Nucleus) - Combined 70,000+ genetic tests into one AI tool. $32M raised, including a recent $14M Series A.\n\nMaitreyee Joshi (Avon Health) - Avon Health is the first AI-native, ONC-certified EMR, powering next-gen healthcare.\n\nSpecial thanks to our sponsor Believe App (the platform making token creation as simple as sending a tweet).\n\nAugust 16 | 7:00-8:30 PM\nSign up at Link in Bio !\n\nHosted by The Residency x Foundess x Homebrew",
+        "the summer event you've been waiting for…\n\nwe're teaming up with @phiaco to host a charcuterie & shop on august 28th 1-4pm at the phia rooftop in nyc 💙🗽\n\n✨ connect with like-minded female founders\n✨ share the ups and downs of building something meaningful from scratch\n✨ enjoy some charcuterie!\n\n{ comment SHOP and we'll send you the link to register 🛍️🛒 }",
+        "Who's ready to go all in?\n🎲 All In: Poker & Game Night\n🗓 Date: Friday, July 11th, 2025\n🕘 Time: 9:00 PM – 12:00 AM\n📍 Location: TBD (NYC)\n\nWhether you're bluffing with a full house or drawing in Pictionary, join us for a cozy night of games, good vibes, and even better company. We'll have poker tables set up (no worries if you're new—we'll teach you!), plus chill alternatives like card games and Pictionary for non-poker players.\n\nEnjoy a curated selection of alcoholic and non-alcoholic drinks, plus late-night snacks to keep the energy going.\n\nPerfect for winding down and meeting other founders in a low-pressure, fun setting. Bring your game face—or just your friendly one. 🃏🎉\n\nRSVP now at https://lu.ma/cmuw1f75"
+      ]
+    },
+    "contentMultiplierModes": {
+      "description": "This brand is used by a content multiplier that generates either X posts or Instagram captions. The user picks which mode.",
+      "modes": {
+        "x": "Use the voice, patterns, styleByAuthor, and xPostGenerationRules sections. Dry, builder-to-builder, freshness-required.",
+        "instagram": "Use the instagramCaptions section. Warm, community-first, event-focused, emoji-friendly."
+      }
+    },
+    "examplePosts": [
+      {
+        "styleRef": "@karpathy",
+        "text": "the wild thing about current coding agents isn't that they write code. it's that the bottleneck quietly moved from 'can the model do it' to 'can you specify what you actually want'. spec-writing is the new programming."
+      },
+      {
+        "styleRef": "@rauchg",
+        "text": "shipping beats describing shipping."
+      },
+      {
+        "styleRef": "@GergelyOrosz",
+        "text": "quiet pattern in the last few months: senior eng hiring is back, but only for people who can actually ship with AI tools end-to-end. 'prompt fluency' is showing up in job ladders now. not a bit."
+      },
+      {
+        "styleRef": "@addyosmani",
+        "text": "reminder: your 2MB hero image is undoing every performance win your framework gave you. measure INP on a mid-tier android before you argue about server components."
+      },
+      {
+        "styleRef": "@swyx",
+        "text": "ai engineering in 2026 is basically three jobs in a trenchcoat: eval designer, context engineer, and infra plumber. the people who are good at all three are the new 10x."
+      },
+      {
+        "styleRef": "@lennysan",
+        "text": "the best PMs I talked to this quarter all did the same thing: they stopped shipping features and started shipping decisions. one crisp decision per week beats ten half-built experiments."
+      },
+      {
+        "styleRef": "@sh_reya",
+        "text": "hot take: most 'our LLM pipeline is broken' bugs are actually 'our eval set is broken'. fix the ruler before you blame the thing being measured."
+      }
+    ]
+  }
+}
